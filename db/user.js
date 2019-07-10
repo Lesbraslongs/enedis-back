@@ -1,10 +1,12 @@
-import { User } from './index';
+// import { User } from './index';
+const User = require('./index');
 
-export const getUserByEnedisId = enedisId => {
+const getUserByEnedisId = enedisId => {
   return User.findById(enedisId);
 };
+module.exports = getUserByEnedisId;
 
-export const findOrCreateUser = (
+const findOrCreateUser = (
   firstname,
   lastname,
   enedisId,
@@ -25,8 +27,10 @@ export const findOrCreateUser = (
     },
   });
 };
+module.exports = findOrCreateUser;
 
-export const updateUser = (user, newData) => {
+const updateUser = (user, newData) => {
   const { firstname, lastname, accessToken, usagePointId } = newData;
   return user.update({ accessToken, firstname, lastname, usagePointId });
 };
+module.exports = updateUser;

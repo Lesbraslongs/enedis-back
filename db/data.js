@@ -1,6 +1,7 @@
-import { Data, User } from './index';
+// import { Data, User } from './index';
+const Data = require('./index');
 
-export const createDataForUser = (userId, data, unit, type, usagePointId) => {
+const createDataForUser = (userId, data, unit, type, usagePointId) => {
   const DBdata = data.map(e => ({
     unit,
     timestamp: e.timestamp,
@@ -11,17 +12,20 @@ export const createDataForUser = (userId, data, unit, type, usagePointId) => {
   }));
   return Data.bulkCreate(DBdata);
 };
+module.exports = createDataForUser;
 
-export const deleteDataForUser = userId => {
+const deleteDataForUser = userId => {
   return Data.findAll({ where: { userId } }).then(datas => {
     datas.foreach(d => d.destroy({ force: true }));
   });
   //return Data.destroy({ where: { userId } });
 };
+module.exports = deleteDataForUser;
 
-export const getDataForUserByType = (userId, type) => {
+const getDataForUserByType = (userId, type) => {
   return Data.findAll({
     where: { userId, type },
     order: [['timestamp', 'DESC']],
   });
 };
+module.exports = getDataForUserByType;
