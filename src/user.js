@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { getUserByEnedisId, findOrCreateUser } from './db/user';
-import { deleteDataForUser } from './db/data';
+import { getUserByEnedisId, findOrCreateUser } from '../db/user';
+import { deleteDataForUser } from '../db/data';
 
 /**
  * get user's accestoken

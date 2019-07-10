@@ -10,7 +10,7 @@ import jwtMiddleWare from 'express-jwt';
 import memorystore from 'memorystore';
 import cors from 'cors';
 
-import { findOrCreateUser, updateUser } from './db/user';
+import { findOrCreateUser, updateUser } from '../db/user';
 
 import {
   getConsumptionLoadCurve,

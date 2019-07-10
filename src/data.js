@@ -1,8 +1,8 @@
 import axios from 'axios';
 import httpStatus from 'http-status';
 import querystring from 'querystring';
-import { getUserByEnedisId } from './db/user';
-import { getDataForUserByType, createDataForUser, deleteDataForUser } from './db/data';
+import { getUserByEnedisId } from '../db/user';
+import { getDataForUserByType, createDataForUser, deleteDataForUser } from '../db/data';
 import { getUserAccessToken } from './user';
 import _ from 'lodash';
 
