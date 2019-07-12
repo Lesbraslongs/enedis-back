@@ -4,8 +4,13 @@
 PREREQUISITES : 
 - Having Node (minimum 11.3) installed
 
-cd into the enedis-back folder, open a terminal, and run the following command to download dependencies :
+Move into the enedis-back folder, open a terminal, and run the following command to download dependencies :
+
 `npm install` OR `yarn`, if you are using yarn instead of npm
+
+To launch the API, run the following command :
+
+`npm start` OR `yarn start`
 
 
 ### BACKEND:
