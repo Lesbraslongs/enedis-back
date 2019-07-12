@@ -1,6 +1,18 @@
 ## README
 
+### INSTALLATION:
+PREREQUISITES : 
+- Having Node (minimum 11.3) installed
+
+cd into the enedis-back folder, open a terminal, and run the following command to download dependencies :
+`npm install` OR `yarn`, if you are using yarn instead of npm
+
+
 ### BACKEND:
+
+#### TODO:
+Add a .env file with environment variable in it (CLIENT_ID, CLIENT_SECRET, JWT_SECRET, ...), to run it locally.
+
 packages intalled:
 - express (server)
 - cors (allow cross origin requests)
