@@ -2,7 +2,7 @@
 
 ### INSTALLATION:
 PREREQUISITES : 
-- Having Node (minimum 11.3) installed
+- Having Node (minimum 11.3) installed on your computer.
 
 Move into the enedis-back folder, open a terminal, and run the following command to download dependencies :
 
